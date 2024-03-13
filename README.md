@@ -40,49 +40,45 @@ Open IIS as an Admin. Register PHP from within IIS. Reload IIS (Open IIS, Stop a
 ![Screenshot 2024-03-13 042608](https://github.com/hectorvalencia2/osticket-prereqs/assets/161524174/81731531-6beb-4d97-8e88-55b9358cfeaa)
 
 Note that some extensions are not enabled. Go back to IIS, sites -> Default -> osTicket. Double-click PHP Manager. Click “Enable or disable an extension”
-Enable: php_imap.dll
-Enable: php_intl.dll
-Enable: php_opcache.dll
-Refresh the osTicket site in your browse, observe the changes
+- Enable: php_imap.dll
+- Enable: php_intl.dll
+- Enable: php_opcache.dll
+ - Refresh the osTicket site in your browse, observe the changes
 
 
 ![Screenshot 2024-03-13 042918](https://github.com/hectorvalencia2/osticket-prereqs/assets/161524174/04290351-c6a0-4a7e-92ff-a077e84e9480)
 
 Rename: ost-config.php
-From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
-To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+- From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+- To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 ![Screenshot 2024-03-13 043022](https://github.com/hectorvalencia2/osticket-prereqs/assets/161524174/4be91049-511e-4028-ad0b-339d5a877426)
 
-Assign Permissions: ost-config.php
-Disable inheritance -> Remove All
-New Permissions -> Everyone -> All
+- Assign Permissions: ost-config.php
+- Disable inheritance -> Remove All
+- New Permissions -> Everyone -> All
 
 ![Screenshot 2024-03-13 043102](https://github.com/hectorvalencia2/osticket-prereqs/assets/161524174/57bb375c-4f55-473d-9876-f32abfbd7519)
 
 Continue Setting up osTicket in the browser (click Continue)
-Name Helpdesk
-Default email (receives email from customers)
+- Name Helpdesk
+- Default email (receives email from customers)
 
 ![Screenshot 2024-03-13 043244](https://github.com/hectorvalencia2/osticket-prereqs/assets/161524174/62fb2b30-0c15-454d-b276-e1517d072961)
 ![Screenshot 2024-03-13 043347](https://github.com/hectorvalencia2/osticket-prereqs/assets/161524174/94a06e15-5c8c-4e0a-b4f7-73ce0986705e)
 
 From the Installation Files, download and install HeidiSQL.
-Open Heidi SQL
-Create a new session, root/Password1
-Connect to the session
-Create a database called “osTicket”
-Continue Setting up osticket in the browser
-MySQL Database: osTicket
-MySQL Username: root
-MySQL Password: Password1
-Click “Install Now!”
+Open Heidi SQL. Create a new session, root/Password1. Connect to the session. Create a database called “osTicket”. Continue Setting up osticket in the browser
+- MySQL Database: osTicket
+- MySQL Username: root
+- MySQL Password: Password1
+ - Click “Install Now!”
 
 ![Screenshot 2024-03-13 043537](https://github.com/hectorvalencia2/osticket-prereqs/assets/161524174/181a177e-3944-4231-b4e5-bc8eb4bf37dd)
 
 Clean up
-Delete: C:\inetpub\wwwroot\osTicket\setup
-Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+- Delete: C:\inetpub\wwwroot\osTicket\setup
+- Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 
 
